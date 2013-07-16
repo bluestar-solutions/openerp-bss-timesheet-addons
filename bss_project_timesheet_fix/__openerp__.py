@@ -25,7 +25,7 @@
     "category" : 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """A module to fix project timesheet rights.""",
-    'author': 'bluestar solutions sàrl',
+    Bluestar Solutions Sàrl
     'website': 'http://www.blues2.ch',
     'depends': ['project',
                 'project_timesheet',
