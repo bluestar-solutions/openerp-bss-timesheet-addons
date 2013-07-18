@@ -24,7 +24,17 @@
     'version': '7.0.2.0',
     "category" : 'Bluestar/Generic module',
     'complexity': "easy",
-    'description': """A module to fix project timesheet rights.""",
+    'description': """
+Use various user group dependent rights on project task work
+============================================================
+
+In the original Project Timesheet module, if a user has update rights on one work but not on all the works of a task, 
+he can't update his work because OpenERP triggers a write operation on all the task works when the user saves the task. 
+This module fixes this problem by triggering the write call on task works with admin user 
+if and only if there is no change on the task works. Only task works with updated value(s) 
+will be written with the current logged user. If the user only updates task works on whose he has update rights, 
+he can save the task. If he tries to update a task work without having rights on it, the original rights exception is triggered.    
+    """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',
     'depends': ['project',
