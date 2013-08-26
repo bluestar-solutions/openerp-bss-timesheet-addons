@@ -26,8 +26,13 @@ class bss_project_task_work(osv.osv):
     
     def write(self, cr, uid, ids, vals, context=None):
         # just update the record with admin if it's called by task form on unmodified entries
+        # REPLACE by following to fix this bug : https://bugs.launchpad.net/openobject-addons/+bug/1023047
+        # if len(vals) == 1 and 'task_id' in vals:
+        #    return super(bss_project_task_work, self).write(cr, 1, ids, vals, context)
+        
+        # Don't update if it's called by task form on unmodified entries (fix https://bugs.launchpad.net/openobject-addons/+bug/1023047 too)
         if len(vals) == 1 and 'task_id' in vals:
-            return super(bss_project_task_work, self).write(cr, 1, ids, vals, context)
+            return True
         
         return super(bss_project_task_work, self).write(cr, uid, ids, vals, context)
     
