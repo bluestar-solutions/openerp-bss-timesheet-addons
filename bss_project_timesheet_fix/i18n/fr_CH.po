@@ -1,0 +1,22 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-05 08:38+0000\n"
+"PO-Revision-Date: 2013-09-05 10:52+0200\n"
+"Last-Translator: Pierre-Yves <pierre-yves.berger@blues2.ch>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1378371128.0\n"
+
+#. module: bss_project_timesheet_fix
+#: model:ir.model,name:bss_project_timesheet_fix.model_project_task_work
+msgid "Project Task Work"
+msgstr "Travail sur la tâche"
